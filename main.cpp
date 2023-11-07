@@ -11,12 +11,12 @@ int main() {
         for (int b = a; b <= limite; b++) {
             // Calcula el tercer lado "c", usando la fórmula de Pitagoras.
             int c = std::sqrt(a * a + b * b);
+
             // Verifica si el conjunto de lados (a, b, c) forma un triple pitagorico valido
             // Verifica si cumple con las condiciones de un triangulo rectangulo.
-
             if (esTriplePitagorico(a, b, c) && esTrianguloValido(a, b, c)) {
                 // Si se cumplen las condiciones, imprime el triple pitagorico encontrado.
-                std::cout << a << " - " << b << " - " << c << std::endl;
+                std::cout << "Triple pitagorico encontrado: " << a << " - " << b << " - " << c << std::endl;
             }
         }
     }
